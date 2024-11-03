@@ -63,7 +63,7 @@ export default function Home() {
           <p className="text-xl text-muted-foreground mb-8 max-w-2xl mx-auto">
             Host your legacy websites like calculators and unit converters on
             the blockchain, absolutely free! No hosting fees, no expiration
-            dates. Preserve your simple web projects forever with HTTP3's
+            dates. Preserve your simple web projects forever with Cloud3's
             decentralized hosting.
           </p>
           <Link href={"/dashboard"}>
@@ -75,6 +75,28 @@ export default function Home() {
             Learn How It Works
           </Button>
        </header>
+
+       <main className="max-w-6xl mx-auto">
+       <section className="mb-16 text-center">
+            <h2 className="text-3xl font-semibold mb-8">
+              Revolutionary Web3 Hosting Platform
+            </h2>
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+              {features.map((feature, index) => (
+                <div
+                  key={index}
+                  className="bg-[#0a0a0a] border border-1 p-6 rounded-xl transition-opacity duration-300 hover:opacity-80 hover:shadow-lg"
+                >
+                  <feature.icon className="w-12 h-12 text-primary mb-4 mx-auto" />
+                  <h3 className="text-xl font-semibold mb-2">
+                    {feature.title}
+                  </h3>
+                  <p className="text-muted-foreground">{feature.description}</p>
+                </div>
+              ))}
+            </div>
+          </section>
+       </main>
       </div>
      </ThemeProvider>
   );
