@@ -1,3 +1,4 @@
+import DeveloperTools from "@/components/DeveloperTools";
 import { ThemeProvider } from "@/components/theme-provider";
 import { Button } from "@/components/ui/button";
 import { ArrowRight,Globe,Zap,Cpu,Search,BarChart,Network} from "lucide-react";
@@ -97,6 +98,8 @@ export default function Home() {
             </div>
           </section>
        </main>
+
+       <DeveloperTools/>
       </div>
      </ThemeProvider>
   );
