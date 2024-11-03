@@ -100,6 +100,10 @@ export default function Home() {
        </main>
 
        <DeveloperTools/>
+
+       <footer className="mt-16 text-center text-sm text-muted-foreground">
+          <p>&copy; 2024 Cloud3. All rights reserved.</p>
+        </footer>
       </div>
      </ThemeProvider>
   );
