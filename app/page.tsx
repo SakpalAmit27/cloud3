@@ -4,6 +4,46 @@ import { ArrowRight } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 export default function Home() {
+  const features = [
+    {
+      icon: Globe,
+      title: "Decentralize Deployment",
+      description:
+        "Deploy and access your website forever for free on the blockchain.",
+    },
+    {
+      icon: Zap,
+      title: "Instant Preview & CI/CD",
+      description:
+        "Automatic deployments from GitHub with instant preview links and version control.",
+    },
+    {
+      icon: Cpu,
+      title: "AI Website Generator",
+      description:
+        "Generate a website using AI and deploy it directly to the blockchain.",
+    },
+    {
+      icon: Search,
+      title: "Decentralized Search Engine",
+      description:
+        "Our search engine has indexed all websites on the blockchain network.",
+    },
+    {
+      icon: BarChart,
+      title: "Analytics & Monitoring",
+      description:
+        "Real-time analytics dashboard and uptime monitoring for your decentralized websites.",
+    },
+    {
+      icon: Network,
+      title: "Decentralized CDN",
+      description:
+        "Utilize our decentralized content delivery network for faster and more reliable access.",
+    },
+  ];
+
+  
   return (
      <ThemeProvider attribute="class" defaultTheme="dark" enableSystem>
       <div className="min-h-screen p-8 pb-20 gap-16 sm:p-12 font-[family-name:var(--font-geist-sans)] bg-background text-foreground ">
