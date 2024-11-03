@@ -1,6 +1,6 @@
 import { ThemeProvider } from "@/components/theme-provider";
 import { Button } from "@/components/ui/button";
-import { ArrowRight } from "lucide-react";
+import { ArrowRight,Globe,Zap,Cpu,Search,BarChart,Network} from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 export default function Home() {
@@ -43,7 +43,7 @@ export default function Home() {
     },
   ];
 
-  
+
   return (
      <ThemeProvider attribute="class" defaultTheme="dark" enableSystem>
       <div className="min-h-screen p-8 pb-20 gap-16 sm:p-12 font-[family-name:var(--font-geist-sans)] bg-background text-foreground ">
