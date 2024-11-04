@@ -1,4 +1,4 @@
-import { Users } from "./schema";
+import { Tokens, Users } from "./schema";
 import {db} from "./dbConfig"
 import { eq } from "drizzle-orm";
 export async function createOrUpdateUser(address:string , email:string){
