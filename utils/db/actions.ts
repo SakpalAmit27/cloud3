@@ -52,5 +52,6 @@ export async function createOrUpdateUser(address:string , email:string){
     }
     }catch(error){
 
+        console.error(`error while authentication : `,error)
     }
 }
