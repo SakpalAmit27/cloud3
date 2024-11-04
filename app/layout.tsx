@@ -4,6 +4,7 @@ import {PrivyProvider} from '@privy-io/react-auth';
 
 
 
+
 import localFont from "next/font/local";
 import "./globals.css";
 
