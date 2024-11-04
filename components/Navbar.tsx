@@ -13,9 +13,9 @@ export default function Navbar(){
       if(user && user.wallet?.address){
         try{
 
-          await CreateOrUpdateUser{
+          await CreateOrUpdateUser(
             
-          }
+          )
         }catch(error){
           console.error(`Error updating user information`,error)
         }
