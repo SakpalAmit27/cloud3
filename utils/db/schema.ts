@@ -9,6 +9,14 @@ export const Users = pgTable("users", {
     lastLogin: timestamp("last_login"),
   });
 
+  export const Tokens = pgTable("tokens", {
+    id: serial("id").primaryKey(),
+    userId: integer("user_id").references(() => Users.id),
+    balance: integer("balance").notNull().default(0),
+    stakedAmount: integer("staked_amount").notNull().default(0),
+    rewardsEarned: integer("rewards_earned").notNull().default(0),
+  });
+
   export const Webpages = pgTable("webpages", {
     id: serial("id").primaryKey(),
     userId: integer("user_id").references(() => Users.id),
