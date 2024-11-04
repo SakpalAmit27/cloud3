@@ -3,7 +3,7 @@ import Image from "next/image"
 import { Button } from "./ui/button"
 import { usePrivy } from "@privy-io/react-auth"
 import { LogIn, LogOut } from "lucide-react";
-import { create } from "domain";
+
 import { createOrUpdateUser } from "@/utils/db/actions";
 
 export default function Navbar(){
