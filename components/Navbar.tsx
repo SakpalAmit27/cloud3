@@ -3,9 +3,24 @@ import Image from "next/image"
 import { Button } from "./ui/button"
 import { usePrivy } from "@privy-io/react-auth"
 import { LogIn, LogOut } from "lucide-react";
+import { create } from "domain";
 
 export default function Navbar(){
     const {login , logout , authenticated , user} = usePrivy();
+
+    const handleUserAuthenticated = async () => {
+
+      if(user && user.wallet?.address){
+        try{
+
+          await CreateOrUpdateUser{
+            
+          }
+        }catch(error){
+          console.error(`Error updating user information`,error)
+        }
+      }
+    }
 
     const handleAuth = () => {
       if(authenticated){
