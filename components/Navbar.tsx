@@ -5,9 +5,11 @@ import { usePrivy } from "@privy-io/react-auth"
 import { LogIn, LogOut } from "lucide-react";
 
 import { createOrUpdateUser } from "@/utils/db/actions";
+import { useEffect } from "react";
 
 export default function Navbar(){
     const {login , logout , authenticated , user} = usePrivy();
+     
 
 
     const handleUserAuthenticated = async () => {
