@@ -37,4 +37,8 @@ contract WebpageStorage{
         require(bytes(webpage.cid).length > 0,"Webpage not found");
         return (webpage.cid,webpage.owner,webpage.timestamp);
     }
+
+    function getUserWebpages(address user) public view returns(string[] memory){
+        return userWebpages[user];
+    }
 }
