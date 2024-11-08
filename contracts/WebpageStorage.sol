@@ -33,7 +33,7 @@ contract WebpageStorage{
     } 
 
     function getWebpage(string memory domain)public view returns(string memory,address,uint256){
-        WebPage memory webpage = webpages[domain],
+        WebPage memory webpage = webpages[domain];
         require(bytes(webpage.cid).length > 0,"Webpage not found");
         return (webpage.cid,webpage.owner,webpage.timestamp);
     }
