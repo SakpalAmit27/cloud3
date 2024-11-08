@@ -10,5 +10,12 @@ contract WebpageStorage{
         uint256 timestamp; 
 
     }
+
+    mapping (string => WebPage) public webpages;
+    mapping (address => string[]) public userWebpages;    
+
     
+  
+
+
 }
