@@ -14,7 +14,10 @@ contract WebpageStorage{
     mapping (string => WebPage) public webpages;
     mapping (address => string[]) public userWebpages;    
 
-    
+    event WebpageStored(string domain,string cid,address owner,uint256 timestamp);
+
+
+
   
 
 
